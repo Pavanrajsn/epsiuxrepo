@@ -1,0 +1,79 @@
+body,*{
+  font-family: Open Sans;
+}
+
+.card{
+  width:250px;
+  border-radius: 1px;
+  color: #7A8594;
+  margin: 0 auto;
+  font-size: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+  cursor: pointer;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
+}
+
+.card-heading{
+  font-size: 15px;
+  color: #0F5EF0;
+  padding: 20px 0 18px 16px;
+  font-weight: bold;
+}
+.card-subheading{
+  padding: 0 0 20px 16px;
+  font-weight: bold;
+}
+.card-description{
+  padding: 0px 0 14px 16px;
+}
+
+.card img{
+  width:100%;
+}
+
+.user-form{
+  padding: 40px;
+  border: 1px solid #7A8594;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 1px;
+}
+
+.input-group{
+  margin-bottom: 20px;
+}
+
+.input-group p{
+  color: #221F4D;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.input-group input{
+  width: 100%;
+  height: 30px;
+  color: rgba(34, 31, 77, 0.5);
+  font-size: 12px;
+  border: 1px solid #7A8594;
+  border-radius: 1px;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.input-group .primary{
+  font-size: 12px;
+  color: #fff;
+  background-color: #0F5EF0;
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 0px;
+}
+
+.input-group .primary:hover{
+  background-color: #0C4BC0;
+  cursor: pointer;
+}
