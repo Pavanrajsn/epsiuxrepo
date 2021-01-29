@@ -8,27 +8,51 @@
 
 
 <form class="user-form">
-  <div class="input-group">
+  <div class="i-group">
     <p>Name</p>
     <input type="text" name="name" placeholder="Enter Name"/>
   </div>
-  <div class="input-group">
+  <div class="i-group">
     <p>Email</p>
     <input type="text" name="email" placeholder="Enter Email"/>
   </div>
-  <div class="input-group">
+  <div class="i-group">
     <p>Phone Number</p>
     <input type="text" name="phone" placeholder="Enter Phone Number"/>
   </div>
-  <div class="input-group">
+  <div class="i-group">
     <p>Password</p>
     <input type="password" name="password" placeholder="Enter Password"/>
   </div>
-  <div class="input-group">
+  <div class="i-group">
     <p>Confirm Password</p>
     <input type="password" name="confirmpassword" placeholder="Confirm Password"/>
   </div>
-  <div class="input-group">
+  <div class="i-group">
     <button class="primary" type="button" name="submit">Save</button>
   </div>
 </form>
+
+
+<table class="table table-striped product-table" [mfData]="data" #mf="mfDataTable">
+    <thead>
+    <tr>
+        <th style="width: 50%;text-align:left;border-right:1px solid #428bca;">
+            <mfDefaultSorter by="name" style="color:#221F4D;font-size:12px;">Product Name</mfDefaultSorter>
+        </th>
+        <th style="width: 25%;text-align:left;border-right:1px solid #428bca;">
+            <mfDefaultSorter by="price" style="color:#221F4D;font-size:12px;">Price</mfDefaultSorter>
+        </th>
+        <th style="width: 25%;text-align:left;">
+            <mfDefaultSorter by="category" style="color:#221F4D;font-size:12px;">Category</mfDefaultSorter>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of mf.data">
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.category}}</td>
+    </tr>
+    </tbody>
+</table>
